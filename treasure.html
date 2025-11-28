@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>마왕의 비밀 던전</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>마왕의 비밀 던전에 오신 것을 환영한다.</h1>
+<p>던전의 모든 스테이지를 통과하면 엄청난 보물이 기다리고 있을 것이다.</p>
+<p>도전 해볼텐가?</p>
+
+<button onclick="goTo('stage1.html')">예</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 1</h1>
+<p>던전의 마왕(민경)이 기르고 있는 강아지의 이름은?</p>
+
+<input id="answer" type="text" placeholder="정답 입력">
+<button onclick="checkInputAnswer('만쥬', 'stage2.html')">제출</button>
+
+<p id="message" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 2</h1>
+<p>중국집에 간 마왕이 가장 먼저 먹을 음식은 무엇일까?</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('짜장면','짜장면','stage3.html','msg')">
+        <img src="https://via.placeholder.com/150?text=짜장면" />
+        <p>짜장면</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('짬뽕','짜장면','stage2.html','msg')">
+        <img src="https://via.placeholder.com/150?text=짬뽕" />
+        <p>짬뽕</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('탕수육','짜장면','stage2.html','msg')">
+        <img src="https://via.placeholder.com/150?text=탕수육" />
+        <p>탕수육</p>
+    </div>
+
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 3</h1>
+<p>다음 중 마왕이 가본 적 없는 도시는?</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('부다페스트','교토','stage3.html','msg')">
+        <p>부다페스트</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('리스본','교토','stage3.html','msg')">
+        <p>리스본</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('페스','교토','stage3.html','msg')">
+        <p>페스</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('교토','교토','stage4.html','msg')">
+        <p>교토</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('부산','교토','stage3.html','msg')">
+        <p>부산</p>
+    </div>
+
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 4</h1>
+<p>마왕의 지갑엔 얼마가 들어있을까? (현금으로)</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('500원','500원','stage5.html','msg')">
+        <img src="https://via.placeholder.com/150?text=500원"/>
+        <p>500원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('1200원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=1200원"/>
+        <p>1,200원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('5000원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=5000원"/>
+        <p>5,000원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('15000원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=15000원"/>
+        <p>15,000원</p>
+    </div>
+
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 4</h1>
+<p>마왕의 지갑엔 얼마가 들어있을까? (현금으로)</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('500원','500원','stage5.html','msg')">
+        <img src="https://via.placeholder.com/150?text=500원"/>
+        <p>500원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('1200원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=1200원"/>
+        <p>1,200원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('5000원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=5000원"/>
+        <p>5,000원</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('15000원','500원','stage4.html','msg')">
+        <img src="https://via.placeholder.com/150?text=15000원"/>
+        <p>15,000원</p>
+    </div>
+
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 5</h1>
+<p>마왕은 오늘(25년 11월 28일) 점심에 뭘 먹었을까?</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('떡볶이','짜장밥','stage5.html','msg')">
+        <img src="https://via.placeholder.com/150?text=떡볶이"/>
+        <p>떡볶이</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('김치볶음밥','짜장밥','stage5.html','msg')">
+        <img src="https://via.placeholder.com/150?text=김치볶음밥"/>
+        <p>김치볶음밥</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('짜장밥','짜장밥','treasure.html','msg')">
+        <img src="https://via.placeholder.com/150?text=짜장밥"/>
+        <p>짜장밥</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('오므라이스','짜장밥','stage5.html','msg')">
+        <img src="https://via.placeholder.com/150?text=오므라이스"/>
+        <p>오므라이스</p>
+    </div>
+
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>보물 획득!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #final-text {
+            margin-top: 30px;
+            font-size: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎉 축하합니다! 🎉</h1>
+
+<img src="https://via.placeholder.com/300?text=보물상자" 
+     alt="보물상자" 
+     style="cursor:pointer;" 
+     onclick="showMessage()">
+
+<p>모든 스테이지를 통과한 당신에게 보물이 기다리고 있습니다.<br>
+보물을 눌러보세요!</p>
+
+<div id="final-text">메~롱 😜</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("final-text").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.choice {
+    width: 180px;
+    background: #333;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.choice:hover {
+    background: #444;
+}
+
+.choice img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ff5656;
+}
+
+function goTo(page) {
+    window.location.href = page;
+}
+
+function checkInputAnswer(correct, nextPage) {
+    const input = document.getElementById("answer").value.trim();
+    const msg = document.getElementById("message");
+
+    if (input === correct) {
+        goTo(nextPage);
+    } else {
+        msg.innerText = "❌ 오답!";
+    }
+}
+
+function checkChoiceAnswer(choice, correct, nextPage, msgId) {
+    const msg = document.getElementById(msgId);
+
+    if (choice === correct) {
+        goTo(nextPage);
+    } else {
+        msg.innerText = "❌ 오답!";
+    }
+}
