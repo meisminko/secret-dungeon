@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 3</h1>
+<p>다음 중 마왕이 가본 적 없는 도시는?</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('부다페스트','교토','stage3.html','msg')">
+        <p>부다페스트</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('리스본','교토','stage3.html','msg')">
+        <p>리스본</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('페스','교토','stage3.html','msg')">
+        <p>페스</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('교토','교토','stage4.html','msg')">
+        <p>교토</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('부산','교토','stage3.html','msg')">
+        <p>부산</p>
+    </div>
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
