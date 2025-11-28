@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스테이지 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>스테이지 2</h1>
+<p>중국집에 간 마왕이 가장 먼저 먹을 음식은 무엇일까?</p>
+
+<div class="choice-container">
+
+    <div class="choice" onclick="checkChoiceAnswer('짜장면','짜장면','stage3.html','msg')">
+        <img src="https://via.placeholder.com/150?text=짜장면" />
+        <p>짜장면</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('짬뽕','짜장면','stage2.html','msg')">
+        <img src="https://via.placeholder.com/150?text=짬뽕" />
+        <p>짬뽕</p>
+    </div>
+
+    <div class="choice" onclick="checkChoiceAnswer('탕수육','짜장면','stage2.html','msg')">
+        <img src="https://via.placeholder.com/150?text=탕수육" />
+        <p>탕수육</p>
+    </div>
+</div>
+
+<p id="msg" class="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
